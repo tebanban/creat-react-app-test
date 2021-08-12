@@ -4,18 +4,18 @@ import AboutPage from '../pages/AboutPage';
 import ContactPage from '../pages/ContactPage';
 import Error404 from '../pages/Error404';
 import HomePage from '../pages/HomePage';
-import Navbar from '../components/Navbar';
+import  NavbarMenu  from '../components/Navbar';
 
 export default function AppRouter() {
     return (
         
         <Router>
-            <Navbar  />
+            <NavbarMenu  />
             <Switch>
-                <Route exact path="/">
+                <Route exact path="/" >
                     <HomePage />
                 </Route>
-                <Route exact path="/about">
+                <Route exact path="/about" >
                     <AboutPage />
                 </Route>  
                 <Route exact path="/contact">
