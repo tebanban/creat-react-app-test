@@ -4,7 +4,8 @@ import AboutPage from '../pages/AboutPage';
 import ContactPage from '../pages/ContactPage';
 import Error404 from '../pages/Error404';
 import HomePage from '../pages/HomePage';
-import  NavbarMenu  from '../components/Navbar';
+import NavbarMenu  from '../components/Navbar';
+import ProfilePage from '../pages/ProfilePage';
 
 export default function AppRouter() {
     return (
@@ -12,18 +13,13 @@ export default function AppRouter() {
         <Router>
             <NavbarMenu  />
             <Switch>
-                <Route exact path="/" >
-                    <HomePage />
-                </Route>
-                <Route exact path="/about" >
-                    <AboutPage />
-                </Route>  
-                <Route exact path="/contact">
-                    <ContactPage />
-                </Route> 
-                <Route path="*">
-                    <Error404 />
-                </Route>   
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/about" component={AboutPage} />
+                <Route exact path="/contact" component={ContactPage} />
+                <Route exact path="/profile/:username" component={ProfilePage}/>
+
+                <Route path="*"  component={Error404} />
+                      
             </Switch>
         </Router>
     )

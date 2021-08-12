@@ -7,6 +7,12 @@ export default function NavbarMenu() {
         <Navbar expand="lg">
             <ul>
                 <li>
+                    <NavLink  exact to="/profile/example">User Profile</NavLink>
+                </li>
+                <li>
+                    <NavLink exact to="/eee">404</NavLink>
+                </li>
+                <li>
                     <NavLink exact to="/" activeClassName="active">Home</NavLink>
                 </li>
                 <li>
