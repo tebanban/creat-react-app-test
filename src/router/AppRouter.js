@@ -6,6 +6,7 @@ import Error404 from '../pages/Error404';
 import HomePage from '../pages/HomePage';
 import NavbarMenu  from '../components/Navbar';
 import ProfilePage from '../pages/ProfilePage';
+import CategoriesPage from '../components/CategoriesPage';
 
 export default function AppRouter() {
     return (
@@ -17,6 +18,7 @@ export default function AppRouter() {
                 <Route exact path="/about" component={AboutPage} />
                 <Route exact path="/contact" component={ContactPage} />
                 <Route exact path="/profile/:username" component={ProfilePage}/>
+                <Route exact path="/categories" component={CategoriesPage}/>
 
                 <Route path="*"  component={Error404} />
                       

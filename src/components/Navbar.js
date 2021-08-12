@@ -10,7 +10,7 @@ export default function NavbarMenu() {
                     <NavLink  exact to="/profile/example">User Profile</NavLink>
                 </li>
                 <li>
-                    <NavLink exact to="/eee">404</NavLink>
+                    <NavLink  exact to="/categories">Categories Page</NavLink>
                 </li>
                 <li>
                     <NavLink exact to="/" activeClassName="active">Home</NavLink>
